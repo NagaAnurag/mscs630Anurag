@@ -1,0 +1,612 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.co.tpsolutions.myapplication.PostForFriendFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "Need A Room"
+                android:gravity="center_horizontal"
+                android:textSize="35dp"
+                android:id="@+id/header_need_a_room"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/uname_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="User Name:"
+                android:layout_below="@+id/header_need_a_room"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/uname_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@+id/header_need_a_room"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/uname_lable"
+                />
+
+            <TextView
+                android:id="@+id/email_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email:"
+                android:layout_below="@+id/uname_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/email_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/uname_data"
+                android:layout_toRightOf="@id/email_lable"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/gender_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gender:"
+                android:layout_below="@+id/email_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/gender_lable"
+                android:layout_alignBottom="@+id/gender_lable"
+                android:orientation="horizontal"
+                android:id="@+id/radio_gender"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/radioButtonMale"
+                    android:checked="true"
+                    android:layout_marginLeft="70sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/radioButtonFemale"
+                    android:checked="false"
+                    />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/phone_no_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="Phone Number"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_below="@+id/gender_lable"
+                />
+
+            <EditText
+                android:id="@+id/occupation_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="Occupation"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_below="@+id/phone_no_data"
+                />
+
+            <EditText
+                android:id="@+id/city_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="City"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_below="@+id/occupation_data"
+                />
+
+            <TextView
+                android:id="@+id/type_of_occupancy_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Type Of Occupancy:"
+                android:layout_below="@+id/city_data"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_type_of_occu"
+                android:layout_toRightOf="@+id/type_of_occupancy_lable"
+                android:layout_below="@+id/city_data"
+                android:layout_alignParentRight="true"
+                android:entries="@array/occupancy_options"
+                android:layout_marginTop="11sp"
+                android:layout_marginLeft="10sp"
+                >
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/type_of_house_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Type Of House:"
+                android:layout_below="@+id/type_of_occupancy_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_type_of_house"
+                android:layout_toRightOf="@+id/type_of_house_lable"
+                android:layout_below="@+id/type_of_occupancy_lable"
+                android:layout_alignParentRight="true"
+                android:entries="@array/type_of_house_options"
+                android:layout_marginTop="11sp"
+                android:layout_marginLeft="10sp"
+                >
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/no_of_rooms_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="No Of Rooms:"
+                android:layout_below="@+id/type_of_house_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_no_of_rooms"
+                android:layout_toRightOf="@+id/type_of_house_lable"
+                android:layout_below="@+id/type_of_house_lable"
+                android:layout_alignParentRight="true"
+                android:entries="@array/no_of_rooms"
+                android:layout_marginTop="11sp"
+                android:layout_marginLeft="10sp"
+                >
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/country_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="Country"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:layout_marginTop="13dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_below="@+id/no_of_rooms_lable"
+                />
+
+            <EditText
+                android:id="@+id/nationality_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="Nationality"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_below="@+id/country_data"
+                />
+
+            <TextView
+                android:id="@+id/reny_budget_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Rent Budget:"
+                android:layout_below="@+id/nationality_data"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_rent_budget"
+                android:layout_toRightOf="@+id/age_lable"
+                android:layout_below="@+id/nationality_data"
+                android:layout_alignParentRight="true"
+                android:entries="@array/rent_budget"
+                android:layout_marginTop="11sp"
+                android:layout_marginLeft="60sp"
+                >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/age_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Age:"
+                android:layout_below="@+id/reny_budget_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_age"
+                android:layout_toRightOf="@+id/age_lable"
+                android:layout_below="@+id/reny_budget_lable"
+                android:layout_alignParentRight="true"
+                android:entries="@array/age"
+                android:layout_marginTop="11sp"
+                android:layout_marginLeft="10sp"
+                >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/no_of_roommates_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="No Of Roommates:"
+                android:layout_below="@+id/age_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_no_of_roommates"
+                android:layout_toRightOf="@+id/no_of_roommates_lable"
+                android:layout_below="@+id/age_lable"
+                android:layout_alignParentRight="true"
+                android:entries="@array/age"
+                android:layout_marginTop="11sp"
+                android:layout_marginLeft="10sp"
+                >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/marital_status_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Marital Status:"
+                android:layout_below="@+id/no_of_roommates_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/marital_status_lable"
+                android:layout_alignBottom="@+id/marital_status_lable"
+                android:orientation="horizontal"
+                android:id="@+id/radio_mstat"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:id="@+id/m_stat_rad_btn_single"
+                    android:checked="true"
+                    android:layout_marginLeft="130sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Married"
+                    android:id="@+id/m_stat_rad_btn_married"
+                    android:checked="false"
+
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/food_habits_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Food Habits:"
+                android:layout_below="@+id/marital_status_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/food_habits_lable"
+                android:layout_alignBottom="@+id/food_habits_lable"
+                android:orientation="horizontal"
+                android:id="@+id/radio_food"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetarian"
+                    android:id="@+id/food_habbits_rad_btn_veg"
+                    android:checked="true"
+                    android:layout_marginLeft="110sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Non Vegetarian"
+                    android:id="@+id/food_habbits_rad_btn_non_veg"
+                    android:checked="false"
+
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/cooking_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cooking Skills:"
+                android:layout_below="@+id/food_habits_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cooking_skills"
+                android:layout_alignBottom="@+id/cooking_skills"
+                android:orientation="horizontal"
+                android:id="@+id/radio_cooking"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/cooking_skills_rad_btn_yes"
+                    android:checked="true"
+                    android:layout_marginLeft="130sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/cooking_skills_rad_btn_no"
+                    android:checked="false"
+
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/you_are_a_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="You are a?:"
+                android:layout_below="@+id/cooking_skills"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/you_are_a_lable"
+                android:layout_alignBottom="@+id/you_are_a_lable"
+                android:orientation="horizontal"
+                android:id="@+id/radio_ura"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Night Owl"
+                    android:id="@+id/you_are_a_rad_btn_night_owl"
+                    android:checked="true"
+                    android:layout_marginLeft="104sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Early Raiser"
+                    android:id="@+id/you_are_a_rad_btn_early_raiser"
+                    android:checked="false"
+
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/smoker_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Smoker:"
+                android:layout_below="@+id/you_are_a_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/smoker_lable"
+                android:layout_alignBottom="@+id/smoker_lable"
+                android:orientation="horizontal"
+                android:id="@+id/radio_smoker"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/smoker_rad_btn_night_yes"
+                    android:checked="true"
+                    android:layout_marginLeft="83sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/smoker_are_a_rad_btn_early_no"
+                    android:checked="false"
+
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/alcoholic_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Alcoholic:"
+                android:layout_below="@+id/smoker_lable"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/alcoholic_lable"
+                android:layout_alignBottom="@+id/alcoholic_lable"
+                android:orientation="horizontal"
+                android:id="@+id/radio_alcohol"
+
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/alcohol_rad_btn_night_yes"
+                    android:checked="true"
+                    android:layout_marginLeft="90sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/alcohol_are_a_rad_btn_early_no"
+                    android:checked="false"
+
+                    />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/additional_pref_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="Additional Preferences"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_below="@+id/alcoholic_lable"
+                />
+
+            <Button
+                android:id="@+id/post_for_room"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:background="@color/btn_login"
+                android:text="POST"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_below="@+id/additional_pref_data"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

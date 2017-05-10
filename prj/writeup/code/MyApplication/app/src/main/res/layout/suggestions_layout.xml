@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/s_imageView"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:src="@drawable/bg"/>
+
+            <TextView
+                android:id="@+id/s_tx_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/s_imageView"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:text="abc"/>
+
+            <TextView
+                android:id="@+id/s_tx_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/s_imageView"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="6sp"
+                android:layout_below="@+id/s_tx_name"/>
+
+            <TextView
+                android:id="@+id/s_tx_phoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/s_imageView"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="6sp"
+                android:layout_below="@+id/s_tx_email"/>
+
+            <TextView
+                android:id="@+id/s_tx_Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/s_tx_phoneNo"
+                android:layout_marginLeft="18sp"
+                android:layout_marginTop="6sp"
+                android:layout_below="@+id/s_tx_email"/>
+
+            <TextView
+                android:id="@+id/s_tx_Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/s_imageView"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="6sp"
+                android:layout_below="@+id/s_tx_phoneNo"/>
+
+            <TextView
+                android:id="@+id/s_tx_Age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/s_tx_Gender"
+                android:layout_marginLeft="29sp"
+                android:layout_marginTop="6sp"
+                android:layout_below="@+id/s_tx_phoneNo"/>
+
+            <TextView
+                android:id="@+id/s_tx_m_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/s_tx_Age"
+                android:layout_marginLeft="29sp"
+                android:layout_marginTop="6sp"
+                android:layout_below="@+id/s_tx_phoneNo"/>
+
+            <TextView
+                android:id="@+id/s_tx_City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_imageView"/>
+
+            <TextView
+                android:id="@+id/s_tx_Country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_imageView"
+                android:layout_toRightOf="@+id/s_tx_City"/>
+
+            <TextView
+                android:id="@+id/s_tx_Nationality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_imageView"
+                android:layout_toRightOf="@+id/s_tx_Country"/>
+
+            <TextView
+                android:id="@+id/s_tx_URA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_imageView"
+                android:layout_toRightOf="@+id/s_tx_Nationality"/>
+
+            <TextView
+                android:id="@+id/s_tx_Occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_imageView"
+                android:layout_toRightOf="@+id/s_tx_URA"/>
+
+            <TextView
+                android:id="@+id/s_tx_Rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_tx_City"/>
+
+            <TextView
+                android:id="@+id/s_tx_Type_Of_House"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_tx_City"
+                android:layout_toRightOf="@+id/s_tx_Rent"/>
+
+            <TextView
+                android:id="@+id/s_tx_No_of_rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_tx_City"
+                android:layout_toRightOf="@+id/s_tx_Type_Of_House"/>
+
+            <TextView
+                android:id="@+id/s_tx_Occupancy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_tx_City"
+                android:layout_toRightOf="@+id/s_tx_No_of_rooms"/>
+
+            <TextView
+                android:id="@+id/s_tx_Food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_tx_Rent"/>
+
+            <TextView
+                android:id="@+id/s_tx_Cooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_tx_Rent"
+                android:layout_toRightOf="@+id/s_tx_Food"/>
+
+            <TextView
+                android:id="@+id/s_tx_No_of_roommates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_tx_Rent"
+                android:layout_toRightOf="@+id/s_tx_Cooking"/>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="20sp"
+                android:id="@+id/s_smoking_imageView"
+                android:layout_below="@+id/s_tx_Cooking"
+                android:layout_marginTop="8sp"
+                android:layout_alignLeft="@+id/s_ac_imageView"
+                android:layout_alignRight="@+id/s_ac_imageView"/>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="20sp"
+                android:id="@+id/s_alcho_imageView"
+                android:layout_below="@+id/s_tx_Cooking"
+                android:layout_toRightOf="@+id/s_smoking_imageView"
+                android:layout_marginTop="8sp"
+                android:layout_alignLeft="@+id/s_tv_imageView"
+                android:layout_alignRight="@+id/s_tv_imageView"/>
+
+            <TextView
+                android:id="@+id/s_tx_Message"
+                android:layout_width="190sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8sp"
+                android:layout_below="@+id/s_tx_Food"/>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="20sp"
+                android:id="@+id/s_ac_imageView"
+                android:layout_below="@+id/s_tx_Cooking"
+                android:layout_toRightOf="@+id/s_p_imageView3"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="39sp"/>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="20sp"
+                android:id="@+id/s_tv_imageView"
+                android:layout_below="@+id/s_tx_Cooking"
+                android:layout_toRightOf="@+id/s_ac_imageView"
+                android:layout_alignTop="@+id/s_ac_imageView"
+                android:layout_alignBottom="@+id/s_ac_imageView"
+                android:layout_marginLeft="10sp"/>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="20sp"
+                android:id="@+id/s_internet_imageView"
+                android:layout_below="@+id/s_tx_Cooking"
+                android:layout_toRightOf="@+id/s_tv_imageView"
+                android:layout_alignTop="@+id/s_ac_imageView"
+                android:layout_alignBottom="@+id/s_ac_imageView"
+                android:layout_marginLeft="10sp"/>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:id="@+id/s_p_imageView1"
+                android:layout_below="@+id/s_tx_Message"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="12sp" />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:id="@+id/s_p_imageView2"
+                android:layout_below="@+id/s_tx_Message"
+                android:layout_toRightOf="@+id/s_p_imageView1"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="12sp" />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:id="@+id/s_p_imageView3"
+                android:layout_below="@+id/s_tx_Message"
+                android:layout_toRightOf="@+id/s_p_imageView2"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="12sp" />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="20sp"
+                android:id="@+id/s_geaser_imageView"
+                android:layout_below="@+id/s_ac_imageView"
+                android:layout_toRightOf="@+id/s_p_imageView3"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"/>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="20sp"
+                android:id="@+id/s_wm_imageView"
+                android:layout_below="@+id/s_tx_Message"
+                android:layout_toRightOf="@+id/s_geaser_imageView"
+                android:layout_alignTop="@+id/s_geaser_imageView"
+                android:layout_alignBottom="@+id/s_geaser_imageView"
+                android:layout_marginLeft="10sp"/>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="20sp"
+                android:id="@+id/s_fridge_imageView"
+                android:layout_below="@+id/s_tx_Message"
+                android:layout_toRightOf="@+id/s_wm_imageView"
+                android:layout_alignTop="@+id/s_geaser_imageView"
+                android:layout_alignBottom="@+id/s_geaser_imageView"
+                android:layout_marginLeft="10sp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

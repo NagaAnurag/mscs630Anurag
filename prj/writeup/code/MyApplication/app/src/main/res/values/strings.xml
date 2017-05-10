@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RooMe</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="btn_post">POST</string>
+    <string name="btn_room">Room</string>
+    <string name="btn_roommate">Room Mate</string>
+    <string name="btn_tempnav">Temp Nav</string>
+    <string name="name">Fullname</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="what_does_roome_do">We get suitable roommates to our users. Now a days, searching for a suitable house for rent at a completely new place is a very much tedious task. And it’s obvious that youngsters who have newly acquired employment in places which are not familiar to them would face problems in this search and after a search, they might not adjust with their roomies. Aside from them, there are many kinds of people who may have some necessities with the kind of roommate they share their home with.
+        Hence, our Code Gizmos Group, Warangal has come up with this website “RooMe” which would assist the people searching the suitable roommate, tenants and also rooms for rent.</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_show_post">ShowPostActivity</string>
+
+
+    <string-array name="occupancy_options">
+        <item>Rent</item>
+        <item>Paying Guest</item>
+    </string-array>
+
+    <string-array name="type_of_house_options">
+        <item>Appartment</item>
+        <item>Independent House</item>
+    </string-array>
+
+    <string-array name="no_of_rooms">
+        <item>1 BHK</item>
+        <item>2 BHK</item>
+        <item>3 BHK</item>
+        <item>4 BHK</item>
+        <item>5 BHK</item>
+        <item>6 BHK</item>
+    </string-array>
+
+    <string-array name="rent_budget">
+        <item>Below 2500</item>
+        <item>4000-5000</item>
+        <item>6000-7000</item>
+        <item>8000-9000</item>
+        <item>10000-12000</item>
+        <item>12000-14000</item>
+        <item>14000-16000</item>
+        <item>16000-18000</item>
+        <item>18000-20000</item>
+        <item>20000-22000</item>
+        <item>22000-25000</item>
+        <item>Above 25000</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>Any</item>
+        <item>Above 40</item>
+        <item>36-40</item>
+        <item>31-35</item>
+        <item>26-30</item>
+        <item>20-25</item>
+        <item>14-19</item>
+    </string-array>
+
+    <string-array name="no_of_roommates">
+        <item>Any</item>
+        <item>1 </item>
+        <item>2 </item>
+        <item>3 </item>
+        <item>4 </item>
+        <item>5 </item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

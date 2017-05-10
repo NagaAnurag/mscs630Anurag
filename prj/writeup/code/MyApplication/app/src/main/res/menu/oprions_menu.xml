@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/aboutUs_id"
+
+        android:title="About Us"
+        ></item>
+
+    <item
+        android:id="@+id/contactUS_id"
+
+        android:title="Contact Us"
+        ></item>
+
+    <item
+        android:id="@+id/advertiseWithUs_id"
+
+        android:title="Advertise With Us"
+        ></item>
+
+    <item
+        android:id="@+id/termsPrivacyFAQ_id"
+
+        android:title="Terms, Privacy FAQ"
+        ></item>
+
+    <item
+        android:id="@+id/share_id"
+
+        android:title="Share"
+        ></item>
+
+
+</menu>

@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="30sp"
+    android:paddingLeft="15sp"
+    android:paddingRight="10sp"
+    tools:context="in.co.tpsolutions.myapplication.AboutUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="What does RooMe do ?"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:id="@+id/question1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/question1"
+        android:id="@+id/aboutus_data"
+        android:text="@string/what_does_roome_do"
+        android:gravity="left"
+        android:textSize="20dp"
+        android:textColor="@color/grey"
+        android:textStyle="normal"
+        />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
